@@ -20,7 +20,7 @@ if (Umur > 6) {
 
 //NOMOR 3
 console.log('=================\nlevel 1 nomor 3')
-var namaHari = prompt("masukkan nama hari(Senin, Selasa, Rabu, Kamis, Jumat, Sabtu, Minggu)");
+var namaHari = prompt("masukkan nama hari\n(Senin, Selasa, Rabu, Kamis, Jumat, Sabtu, Minggu)");
 switch (namaHari) {
   case "Senin":
     console.log(
