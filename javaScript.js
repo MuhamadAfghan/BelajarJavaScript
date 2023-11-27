@@ -6,51 +6,53 @@ for (let i = 10; i >= 1; i--) {
 }
 
 //NOMOR 2
+console.log('=================\nlevel 1 nomor 2')
 var Umur = parseInt(prompt("masukkan umur anda"));
 if (Umur > 6) {
-  alert("harus bayar tiket");
+  console.log("harus bayar tiket");
 } else {
   if (!Number.isInteger(Umur)) {
-    alert("masukkan angka");
+    console.log("masukkan angka");
   } else {
-    alert("tidak harus bayar tiket");
+    console.log("tidak harus bayar tiket");
   }
 }
 
 //NOMOR 3
+console.log('=================\nlevel 1 nomor 3')
 var namaHari = prompt("masukkan nama hari");
 switch (namaHari) {
   case "Senin":
-    alert(
+    console.log(
       "Jam kerja dimulai dari pukul 07.30 sampai 16.30 dengan penanggung jawab piket : Anisa"
     );
     break;
   case "Selasa":
-    alert(
+    console.log(
       "Jam kerja dimulai dari pukul 08.00 sampai 17.00 dengan penanggung jawab piket : Berlyn"
     );
     break;
   case "Rabu":
-    alert(
+    console.log(
       "Jam kerja dimulai dari pukul 08.00 sampai 17.00 dengan penanggung jawab piket : Dani"
     );
     break;
   case "Kamis":
-    alert(
+    console.log(
       "Jam kerja dimulai dari pukul 08.00 sampai 17.00 dengan penanggung jawab piket : Fema"
     );
     break;
   case "Jumat":
-    alert(
+    console.log(
       "Jam kerja dimulai dari pukul 08.00 sampai 16.45 dengan penanggung jawab piket : Karina"
     );
     break;
   case "Sabtu":
   case "Minggu":
-    alert("Hari Libur");
+    console.log("Hari Libur");
     break;
   default:
-  alert("Nama hari Tidak diketahui\nNama hari harus diawali dengan huruf kapital");
+  console.log("Nama hari Tidak diketahui\nNama hari harus diawali dengan huruf kapital");
 }
 
 // NOMOR 4
@@ -95,13 +97,14 @@ function sisaBagi(a, b) {
 console.log(sisaBagi(10, 3));
 
 //lever 3 nomor 2
+console.log(' ================\nlevel 3 nomor 2');
 let perkondisian = (arg1, arg2) => {
   if (arg1 == arg2) {
-    alert(`angka ${arg1} sama dengan ${arg2}`);
+    console.log(`angka ${arg1} sama dengan ${arg2}`);
   } else if (arg1 > arg2) {
-    alert(`angka ${arg1} lebih besar dari ${arg2}`);
+    console.log(`angka ${arg1} lebih besar dari ${arg2}`);
   } else if (arg1 < arg2) {
-    alert(`angka ${arg1} lebih kecil dari ${arg2}`);
+    console.log(`angka ${arg1} lebih kecil dari ${arg2}`);
   }
 };
 
@@ -111,22 +114,23 @@ let perkondisian = (arg1, arg2) => {
   );
 
 //level 3 nomor 3
+console.log(' ================\nlevel 3 nomor 3');
 document.getElementById("beliTiket").addEventListener("click", () => {
   const confirm = window.confirm(
     "Apakah Anda yakin untuk meneruskan proses pembelian tiket?"
   );
   if (confirm == true) {
-    const jumlahTiket = window.prompt(
+    const jumlahTiket = prompt(
       "Masukkan jumlah tiket yang akan dipesan:"
     );
     if (jumlahTiket !== "") {
       const harga = jumlahTiket * 35000;
-      window.alert("Total harga yang harus dibayar: Rp" + harga);
+      console.log("Total harga yang harus dibayar: Rp" + harga);
     } else {
-      window.alert("Proses pembelian tiket tidak dapat dilanjutkan");
+      console.log("Proses pembelian tiket tidak dapat dilanjutkan");
     }
   } else {
-    window.alert("Batal memesan tiket");
+    console.log("Batal memesan tiket");
   }
 });
 
